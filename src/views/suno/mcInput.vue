@@ -28,8 +28,8 @@ const cs= ref({
 });
 
 const mvOption= [
-{label: 'verion: v3.5',value: 'chirp-v3-5'}
-,{label:'verion: v3',value: 'chirp-v3-0'}
+{label: 'verion: B算法',value: 'chirp-v3-5'} //v3.5
+,{label:'verion: A算法',value: 'chirp-v3-0'}
  ]
 
 const canPost = computed(() => {
