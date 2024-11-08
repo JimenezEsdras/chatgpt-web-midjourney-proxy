@@ -435,7 +435,7 @@ export default {
     "nodata": "請先創作才有歌曲列表",
 
     "menu": "音樂",
-    "menuinfo": "Suno 音樂創作",
+    "menuinfo": "音樂創作",
     "server": "Suno API 端點",
     "serverabout": "Suno 相關",
     "setOpenKeyPlaceholder": "Suno API 的相關KEY；可不填",

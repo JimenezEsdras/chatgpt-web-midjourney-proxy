@@ -446,7 +446,7 @@ export default {
     "nodata": "Please compose first to have a list of songs",
 
     "menu": "Music",
-    "menuinfo": "Suno Music Creation",
+    "menuinfo": "Music Creation",
     "server": "Suno API Endpoint",
     "serverabout": "Suno Related",
     "setOpenKeyPlaceholder": "Related KEY for Suno API; optional"

@@ -37,6 +37,8 @@ export default defineConfig((env) => {
     resolve: {
       alias: {
         '@': path.resolve(process.cwd(), 'src'),
+         'openai-realtime-api-beta-client': '@openai/realtime-api-beta/dist/lib/client.js',
+         'vue-waterfall-plugin-next-waterfall': 'vue-waterfall-plugin-next/dist/types/types/waterfall',
       },
     },
     plugins: setupPlugins(viteEnv),

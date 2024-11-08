@@ -458,7 +458,7 @@ export default {
     ,nodata:'请先创作才有歌曲列表'
 
     ,menu:'音乐'
-    ,menuinfo:'Suno 音乐创作'
+    ,menuinfo:'音乐创作'
     ,server:'Suno 接口地址'
     ,serverabout:'Suno 相关'
     ,setOpenKeyPlaceholder:'Suno API 的相关KEY；可不填'

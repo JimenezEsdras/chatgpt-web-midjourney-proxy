@@ -29,7 +29,7 @@ const load= async ()=>{
     if( homeStore.myData.session.gptUrl ){
        d = await my2Fetch( homeStore.myData.session.gptUrl  );
     }else {
-        d = await myFetch('https://gpts.ddaiai.com/open/gpts');
+        d = await myFetch('https://gpts.ddaiai.com/open/gpts?ff=suno');
     }
     gptsInitList.value = d.gpts as gptsType[];
     tag.value= d.tag as string[];
