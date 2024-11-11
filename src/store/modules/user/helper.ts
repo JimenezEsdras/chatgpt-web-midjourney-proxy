@@ -23,6 +23,7 @@ export function defaultSetting(): UserState {
       name:  t('mjset.sysname'),//'AI绘图',
       //description: 'Star on <a href="https://github.com/Dooy/chatgpt-web-midjourney-proxy" class="text-blue-500" target="_blank" >GitHub</a>',
       description: '音乐创作',
+      backgroundImage:'https://musiclab-0635.s3.bitiful.net/2014120615262212179.png'
     },
   }
 }
