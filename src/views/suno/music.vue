@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 import McInput from './mcInput.vue';
 import mcList from './mcList.vue';
 import mcplayer from './mcplayer.vue';
@@ -7,7 +7,7 @@ import { NTabs,NTabPane} from "naive-ui"
 
 import udioInput from './udioInput.vue';
 import udioList from './udioList.vue';
-import { gptServerStore } from '@/store';
+import { gptServerStore, useUserStore } from '@/store';
 
 const st= ref({menu:'suno'});
 
@@ -15,10 +15,27 @@ const handleUpdateValue=(v:string)=>{
    //mlog("handleUpdateValue",v)
    gptServerStore.setMyData({TAB_MUSIC:v})
 }
+
+
+const userStore = useUserStore();
+
+const userInfo = computed(() => userStore.userInfo);
+
+const backgroundImage = computed(()=>userInfo.value.backgroundImage ?? "");
+
 </script>
 
-<template>
 
+
+
+<template>
+<div v-if="backgroundImage" 
+    class=" fixed z-[200] pointer-events-none top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat"
+    :style="{
+      'background-image': 'url(' + backgroundImage + ')',
+      opacity: 0.19,
+    }"
+  ></div>
 <div class="flex w-full h-full   ">
     <div class="w-[300px] h-full  overflow-y-auto ">
         <n-tabs type="line" animated     :default-value="gptServerStore.myData.TAB_MUSIC??'suno'"  @update:value="handleUpdateValue"   >
@@ -26,10 +43,10 @@ const handleUpdateValue=(v:string)=>{
             <McInput /> 
          </n-tab-pane>
 
-         <n-tab-pane name="suno" tab="Suno"> 
+         <n-tab-pane name="suno" tab="完整AI"> 
             <McInput /> 
          </n-tab-pane>
-          <n-tab-pane name="udio" tab="Udio"> 
+          <n-tab-pane name="udio" tab="片段AI"> 
             <udioInput/>
          </n-tab-pane>
            

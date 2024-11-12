@@ -25,8 +25,8 @@ const lyriceConfig=[
 ]
 
 const modelConfig=[
-{label: 'Model: udio-32 '+t('mj.ud_v32'),value: 'udio32-v1.5'}
-,{label:'Model: udio-130 '+t('mj.ud_v130'),value: 'udio130-v1.5'}
+{label: 'Model: 短样本',value: 'udio32-v1.5'}
+,{label:'Model: 长样本' ,value: 'udio130-v1.5'}
 ];
 const modeConfig=[
 {label:  t('mj.ud_precede'),value: 'precede'}
@@ -193,6 +193,6 @@ onMounted(() => {
     </template>
     
     
-    <div v-html="t('mj.ud_info')"  class="pt-4 px-2 text-[12px]"></div>
+    <!-- <div v-html="t('mj.ud_info')"  class="pt-4 px-2 text-[12px]"></div> -->
 </div>
 </template>
