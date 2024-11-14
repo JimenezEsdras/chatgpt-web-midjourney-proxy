@@ -19,7 +19,7 @@ export function defaultSetting(): UserState {
   return {
     userInfo: {
       //avatar: 'https://raw.githubusercontent.com/Dooy/chatgpt-web-midjourney-proxy/main/src/assets/avatar.jpg',
-      avatar: 'https://raw.githubusercontent.com/JimenezEsdras/mjchat-rui/main/src/assets/rui.jpg',
+      avatar: 'https://musiclab-0635.s3.bitiful.net/logo1.jpg',
       name:  t('mjset.sysname'),//'AI绘图',
       //description: 'Star on <a href="https://github.com/Dooy/chatgpt-web-midjourney-proxy" class="text-blue-500" target="_blank" >GitHub</a>',
       description: '音乐创作',
