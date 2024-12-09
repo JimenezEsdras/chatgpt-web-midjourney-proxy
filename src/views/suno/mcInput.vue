@@ -28,7 +28,8 @@ const cs= ref({
 });
 
 const mvOption= [
-{label: 'verion: B算法',value: 'chirp-v3-5'} //v3.5
+{label: 'verion: C算法',value: 'chirp-v4'} //v3.5
+,{label: 'verion: B算法',value: 'chirp-v3-5'} //v3.5
 ,{label:'verion: A算法',value: 'chirp-v3-0'}
  ]
 
