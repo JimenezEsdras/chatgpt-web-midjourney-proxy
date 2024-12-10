@@ -14,12 +14,12 @@ const exSuno= ref<SunoMedia>()
 const des= ref( {
   "gpt_description_prompt": "",
   "make_instrumental": false,
-  "mv": "chirp-v3-5",
+  "mv": "chirp-v4",
   "prompt": ""
 });
 const cs= ref({
   "prompt": "",
-  "mv": "chirp-v3-5",
+  "mv": "chirp-v4",
   "title": "",
   "tags": "",
   "continue_at": 120,
